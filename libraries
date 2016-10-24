@@ -7,4 +7,9 @@ app/lib:
     - bootstrap.min.js
     - jquery.min.js
     - underscore-1.4.4.min.js
-    - bootstrap.js    
+    - bootstrap.js
+
+test/lib:
+    Files:
+        - angular-mocks.js
+        - sinon-1.17.5.js

@@ -1,0 +1,7 @@
+[gerrit]
+	scheme = ssh
+	host = review.gerrithub.io
+	port = 29418
+	project = gregciu/AngularJsTest
+	defaultbranch = master
+	
