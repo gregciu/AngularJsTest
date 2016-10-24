@@ -1,0 +1,12 @@
+<div ng-controller="MessageController" style="padding-left: 20px; padding-right: 20px">
+    <div class="container">
+        <label for="message">Greeting message:</label>
+        <input id="message" type="text" class="input-large" ng-model="message.info"
+               placeholder="Fill in with greeting message...">
+        <button type="submit" ng-click="submitGreeting()">Submit greeting</button>
+
+        <colorable msg="{{message.info}}"/>
+
+
+    </div>
+</div>
