@@ -1,0 +1,20 @@
+{
+  "name": "angualr-test",
+  "description": "This project is a demo for testing angularjs, karma, jasmine, git, github, gerrit, jenkins",
+  "main": "index.js",
+  "authors": [
+    "gregciu"
+  ],
+  "license": "ISC",
+  "homepage": "git@github.com/gregciu/AngularJsTest.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

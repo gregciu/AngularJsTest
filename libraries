@@ -1,0 +1,10 @@
+app/lib:
+    Dir:
+    - angular-1.4.0/
+    - jquery.json2html-master/
+    - jquery-ui-1.11.4/
+    Files:
+    - bootstrap.min.js
+    - jquery.min.js
+    - underscore-1.4.4.min.js
+    - bootstrap.js    

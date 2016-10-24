@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="greetingApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <base href="/"/>
+    <link rel="stylesheet" href="lib/jquery-ui-1.11.4/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-cloak>
+<div class="container">
+    <div class="navbar" ng-controller="MenuController">
+        <div class="navbar-inner">
+            <ul class="nav">
+                <li><a href="#" ng-click="createMessage()">Create Message</a></li>
+            </ul>
+        </div>
+    </div>
+    <ng-view></ng-view>
+</div>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/jquery.json2html-master/jquery.json2html.js"></script>
+<script src="lib/jquery.json2html-master/json2html.js"></script>
+<script src="lib/angular-1.4.0/angular.js"></script>
+<script src="lib/angular-1.4.0/angular-resource.min.js"></script>
+<script src="lib/angular-1.4.0/angular-route.js"></script>
+<script src="lib/underscore-1.4.4.min.js"></script>
+<script src="ng-app/GreetingApp.js"></script>
+<script src="ng-app/controllers/MenuController.js"></script>
+<script src="ng-app/controllers/MessageController.js"></script>
+<script src="ng-app/controllers/MessageSubmitController.js"></script>
+<script src="ng-app/controllers/QueriesController.js"></script>
+<script src="ng-app/directives/colorable.js"></script>
+<script src="ng-app/services/checkKeyWord.js"></script>
+<script src="ng-app/services/infoData.js"></script>
+<script src="ng-app/services/chooseGreeting.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+</body>
+</html>

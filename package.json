@@ -1,0 +1,33 @@
+{
+  "name": "angualr-test",
+  "version": "1.0.0",
+  "description": "This project is a demo for testing angularjs, karma, jasmine, git, github, gerrit, jenkins",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "express": "^4.13.0",
+    "fs": "0.0.1-security",
+    "json2html": "0.0.8",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "jasmine-core": "2.3.4",
+    "karma": "0.12.37",
+    "karma-jasmine": "0.3.6",
+    "karma-ng-html2js-preprocessor": "0.1.2",
+    "karma-chrome-launcher": "0.2.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gregciu/AngularJsTest.git"
+  },
+  "author": "gregciu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregciu/AngularJsTest/issues"
+  },
+  "homepage": "https://github.com/gregciu/AngularJsTest#readme"
+}
