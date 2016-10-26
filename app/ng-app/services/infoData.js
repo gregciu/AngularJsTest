@@ -10,6 +10,10 @@ greetingMainApp.factory('infoData', function ($resource) {
     });
 
    return {
+       saveGreeting: function (greeting) {
+           greeting.id = 999;
+           return infoResource.save(greeting);
+       },
        getGreeting: function (greetingId) {
            return infoResource.get({id: greetingId});
        },

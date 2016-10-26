@@ -1,9 +1,15 @@
 var fs = require('fs');
 
+module.exports.save = function (req, res) {
+    var greeting = req.body;
+    fs.writeFileSync('app/data/' + req.params.id + '.json', JSON.stringify(greeting));
+    res.send(greeting);
+};
+
 module.exports.get = function(req, res) {
-    var event = fs.readFileSync('app/data/' + req.params.id + '.json', 'utf8');
+    var greeting = fs.readFileSync('app/data/' + req.params.id + '.json', 'utf8');
     res.setHeader('Content-Type', 'application/json');
-    res.send(event);
+    res.send(greeting);
 };
 
 module.exports.getAll = function (req, res) {
