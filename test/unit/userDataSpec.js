@@ -8,6 +8,8 @@ describe('userData', function () {
     beforeEach(function () {
         mockUserResource = sinon.stub({
             get: function () {
+            },
+            save: function () {
             }
         });
         //This is required to point for userData service that if is called
@@ -30,5 +32,16 @@ describe('userData', function () {
             expect(userData.getUser('John')).toEqual('sth data');
 
         }));
+
+
     });
+
+    describe('save', function () {
+        it('should userResource.save called with the same data as userData.save', inject(function (userData) {
+            userData.save('test');
+
+            expect(mockUserResource.save.calledWith('test')).toBe(true);
+
+        }));
+    })
 });
