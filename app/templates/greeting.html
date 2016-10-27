@@ -5,8 +5,12 @@
                placeholder="Fill in with greeting message...">
         <button type="submit" ng-click="submitGreeting()">Submit greeting</button>
 
-        <colorable msg="{{message.info}}"/>
-
+        <div>
+            <colorable msg="{{message.info}}"/>
+        </div>
+        <label for="numberContentInfo">Example of usage filter "greeting" for value:</label>
+        <input id="numberContentInfo" type="text" class="input-medium" ng-model="number" placeholder="Number ID...">
+        <h2>{{1 | greeting}}</h2>
 
     </div>
 </div>
