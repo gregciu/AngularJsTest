@@ -11,7 +11,7 @@ app.use(express.static( rootPath + '/app'));
 
 app.get('/data/:id', greetingData.get);
 app.get('/data', greetingData.getAll);
-// app.post('/data/event/:id', events.save);
+app.post('/data/:id', greetingData.save);
 app.get('*', function(req, res) { res.sendFile(rootPath + '/app/index.html'); });
 
 app.listen(9996);
