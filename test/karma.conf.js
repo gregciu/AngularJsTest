@@ -12,6 +12,10 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
 
+    // it is necessary to recognize path for templates/directives
+    ngHtml2JsPreprocessor: {
+      prependPrefix: '/'
+    },
 
     // list of files / patterns to load in the browser
     files: [
